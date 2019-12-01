@@ -1,0 +1,42 @@
+{
+  "name": "html2png",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "public",
+    "html",
+    "png",
+    "screenshot"
+  ],
+  "author": "Mikaël Labrut <labrut@gmail.com>",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLKiiwy/miniprinter.git",
+    "directory": "packages/html2png"
+  },
+  "scripts": {
+    "start": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "commander": "^4.0.1",
+    "puppeteer": "^2.0.0",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4"
+  },
+  "bin": {
+    "html2png-cli": "./src/cli.js"
+  }
+}

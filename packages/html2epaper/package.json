@@ -1,0 +1,35 @@
+{
+  "name": "html2epaper",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "public",
+    "html",
+    "png",
+    "screenshot"
+  ],
+  "author": "Mikaël Labrut <labrut@gmail.com>",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLKiiwy/miniprinter.git",
+    "directory": "packages/html2epaper"
+  },
+  "scripts": {},
+  "dependencies": {
+    "e-Paper": "https://github.com/waveshare/e-Paper.git",
+    "html2png": "^0.0.0",
+    "jimp": "^0.9.3"
+  },
+  "bin": {
+    "html2epaper-cli": "./src/cli.js"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.jest-cache
+lerna-debug.log
+build
+.env
+cypress_example
+cypress/videos
+cypress/screenshots
+.cache
+packages/html2epaper/bmp
+packages/html2epaper/python/lib
+packages/html2png/png
