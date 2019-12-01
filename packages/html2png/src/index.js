@@ -3,12 +3,12 @@ const puppeteer = require('puppeteer');
 module.exports = async function html2png(
   html,
   filepath,
-  options = { width: 200, height: 200, deviceScaleFactor: 1 }
+  options = { width: 264, height: 176, deviceScaleFactor: 1 }
 ) {
   const browser = await puppeteer.launch({
-  	executablePath: '/usr/bin/chromium-browser',
-	dumpio: true,
-	  args: ['--disable-features=VizDisplayCompositor'],
+    executablePath: '/usr/bin/chromium-browser',
+    dumpio: true,
+    args: ['--disable-features=VizDisplayCompositor']
   });
   console.log('new page', html);
   const page = await browser.newPage();
