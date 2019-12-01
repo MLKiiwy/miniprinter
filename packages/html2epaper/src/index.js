@@ -31,8 +31,8 @@ function createLibSymlink() {
 
 module.exports = async function html2epaper(html, options = { device: '' }) {
   try {
-    const pngPath = resolve(__dirname, '../bmp/image.png');
-    const bmpPath = resolve(__dirname, '../bmp/image.bmp');
+    const pngPath = resolve(__dirname, '../python/bmp/image.png');
+    const bmpPath = resolve(__dirname, '../python/bmp/image.bmp');
     console.log(html, pngPath, bmpPath);
     await html2png(html, pngPath);
     const pngfile = await jimp.read(pngPath);
