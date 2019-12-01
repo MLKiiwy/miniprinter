@@ -36,7 +36,6 @@ module.exports = async function html2epaper(html, options = { device: '' }) {
     console.log(html, pngPath, bmpPath);
     await html2png(html, pngPath);
     const pngfile = await jimp.read(pngPath);
-    pngfile.rotate(90, false);
     await pngfile.writeAsync(bmpPath);
     createLibSymlink();
     const bmp2epaperBinPath = resolve(__dirname, '../python/bmp2epaper.py');

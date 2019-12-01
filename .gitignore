@@ -12,6 +12,6 @@ cypress/videos
 cypress/screenshots
 .cache
 packages/html2epaper/bmp
-packages/html2epaper/python/bmp
+packages/html2epaper/python/bmp/*
 packages/html2epaper/python/lib
 packages/html2png/png

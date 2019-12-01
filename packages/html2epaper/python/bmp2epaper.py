@@ -23,7 +23,7 @@ try:
 
     logging.info("init and Clear")
     epd.init()
-    epd.Clear(0xFF)
+    #epd.Clear(0xFF)
     
     logging.info("read bmp file")
     Himage = Image.open(os.path.join(picdir, 'image.bmp'))
@@ -31,7 +31,7 @@ try:
     epd.display(epd.getbuffer(Himage))
     
     logging.info("Goto Sleep...")
-    epd.Clear(0xFF)
+    #epd.Clear(0xFF)
     epd.sleep()
     
 except IOError as e:
