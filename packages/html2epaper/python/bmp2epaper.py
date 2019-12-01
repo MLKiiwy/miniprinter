@@ -3,7 +3,7 @@
 import sys
 import os
 
-picdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../bmp')
+picdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'bmp')
 libdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'lib')
 if os.path.exists(libdir):
     sys.path.append(libdir)
@@ -27,9 +27,11 @@ try:
     
     logging.info("read bmp file")
     Himage = Image.open(os.path.join(picdir, 'image.bmp'))
+    logging.info(os.path.join(picdir, 'image.bmp'))
     epd.display(epd.getbuffer(Himage))
     
     logging.info("Goto Sleep...")
+    epd.Clear(0xFF)
     epd.sleep()
     
 except IOError as e:
